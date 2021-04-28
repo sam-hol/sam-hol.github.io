@@ -41,8 +41,8 @@ body > h1 {
 
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 100%; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    width: 20%; /* Set the width of the sidebar */
+    position: relative; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0px; /* Stay at the top */
     left: 0;
@@ -54,7 +54,7 @@ body > h1 {
   }
 
   div > #myName {
-      width: 100%;
+      width: 10%;
       color:aliceblue;
       font-size: 25px;
       z-index: 1;
