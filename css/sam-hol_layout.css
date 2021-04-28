@@ -1,13 +1,24 @@
 @charset "utf-8";
 
 body {
+    padding-top: 1vmax;
+
 	margin: 0 auto;
     align-content:center;
     text-align:center;
 	width: 100%;
 }
 
-html > h1, html > footer {
+html > h1, footer {
     align-content:center;
     text-align:center;
 }
+
+footer {
+    bottom: 15px;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+

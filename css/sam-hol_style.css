@@ -7,7 +7,16 @@
 
 /* HTML and Body Styles */
 html {
-    background-color:lightgray;
+    background-color:rgb(59, 58, 58);
+}
+
+
+body {
+    color:#f1f1f1;
+}
+
+body > h1 {
+    padding-top: 1vmax;
 }
 
 
@@ -30,6 +39,55 @@ html {
 
 /* Navigation Styles */	
 
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 100%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0px; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0px;
+    text-align:left;
+    float: left;
+  }
+
+  div > #myName {
+      width: 100%;
+      color:aliceblue;
+      font-size: 25px;
+      z-index: 1;
+      top: 0px;
+      position: relative;
+      text-align:center;
+      left: 25vmax;
+      overflow-x: hidden;
+  }
+  
+.sidenav a {
+    padding: 6px 8px 16px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    /*display: block*/;
+    
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav a:visited {
+    color:darkorchid;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .body {font: 18px;}
+}
 
 
 
