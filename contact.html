@@ -20,17 +20,46 @@
     <a id="skillsButton" href="skills.html" href="sam-hol.github.io/docs/skills.html">Skills</a>
     <a id="projectsButton" href="projects.html" href="sam-hol.github.io/docs/projects.html">Projects</a>
     <a id="contactButton" href="contact.html" href="sam-hol.github.io/docs/contact.html">Contact</a>
-    <elem id="myName" >Sam</elem>
 
 
 </div>
 
 <body>
 
-<article>
-    <p>Contact info will go here!</p>
-</article>
 
+<form id="contactForm" action="mailto:sarious6@gmail.com" method="post">
+    <fieldset id="myInfo">
+        <legend>My contact info</legend>
+        <div id="myContact">
+            <tel>Phone: 1.###.###.####<br/></tel>
+            <email>E-mail: my.email</email>
+        </article>
+    </fieldset>
+    <fieldset id="custInfo">
+        <legend>Leave your contact info</legend>
+        <div class="formRow">
+            <label for="name">Name</label>
+            <input name="custName" id="name" placeholder="First and last name" type="text" required />
+        </div>
+        <div class="formRow">
+            <label for="phone">Phone</label>
+            <input name="custPhone" id="phone" placeholder="#.###.###.####" type="text" required />
+        </div>
+        <div class="formRow">
+            <label for="email">E-mail</label>
+            <input name="custEmail" id="email" placeholder="you@email.com" type="text" required />
+        </div>
+        <div class="formRow">
+            <lable for="extraInfo">Message</lable>
+            <textarea name="extInfo" id="extraInfo" placeholder="Leave a short message for me here." type="text"></textarea>
+        </div>
+    </fieldset>
+
+    <div id="buttons">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Cancel" />
+    </div>
+</form>
 
 
 
@@ -41,7 +70,6 @@
 </body>
 
 <footer>
-    <p>Hosted on Github.io!</p>
 </footer>
 
 </html>
