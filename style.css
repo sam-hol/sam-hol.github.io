@@ -1,16 +1,30 @@
 body {
-    background-color:rgb(62, 91, 101);
+    background-color:dodgerblue;
 }
 
 .main {
     margin: auto;
     width: 50%;
-    border: 3px solid rgb(62, 62, 77);
+    border: 3px solid black;
     padding: 10px;
     text-align: center;
+    background-color: tomato;
+    border-radius: 25px;
 }
 
 .dookie_pic {
     max-height: 15%;
     max-width: 15%;
+}
+
+.topbar {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+.dropdown {
+
 }
