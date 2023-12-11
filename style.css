@@ -1,0 +1,16 @@
+body {
+    background-color:rgb(62, 91, 101);
+}
+
+.main {
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(62, 62, 77);
+    padding: 10px;
+    text-align: center;
+}
+
+.dookie_pic {
+    max-height: 15%;
+    max-width: 15%;
+}
