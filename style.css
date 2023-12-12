@@ -1,5 +1,6 @@
 body {
-    background-color:dodgerblue;
+    background-color:lightslategray;
+    margin: 0px;
 }
 
 .main {
@@ -8,7 +9,17 @@ body {
     border: 3px solid black;
     padding: 10px;
     text-align: center;
-    background-color: tomato;
+    background-color:wheat;
+    border-radius: 25px;
+}
+
+.solution {
+    margin: auto;
+    width: 80%;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: wheat;
     border-radius: 25px;
 }
 
@@ -19,12 +30,47 @@ body {
 
 .topbar {
     margin: auto;
-    width: 90%;
+    width: 100%;
     padding: 10px;
     text-align: center;
+    justify-content: center;
     border-bottom: 3px solid black;
+    background-color: wheat;
 }
 
-.dropdown {
+.grid-container {
+    display: grid; 
+    gap: 5px;
+    justify-content: center;
+    margin: auto;
+    padding-top: 20px;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+}
 
+.solutionGrid {
+    display: grid; 
+    gap: 15px;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    grid-template-columns: repeat(2, minmax(0,1fr)); 
+}
+
+#txtPicker, #dayMenu {
+    display: block;
+    margin: auto;
+
+}
+
+#txtPicker {
+    display: none;
+}
+
+.filePLabel {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color:whitesmoke;
+    border-radius: 5px;
 }

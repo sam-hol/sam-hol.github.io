@@ -3,52 +3,67 @@
 <head>
   <link rel="shortcut icon" type="image/ico" href="/resources/images/favicon.ico" />
   <meta charset="utf-8">
-  <title></title>
+<script src="scripts/aoc2k23.js"></script>
+<title>aoc2k23</title>
   <link href="style.css" rel="stylesheet" />
 </head>
 
-    <div class="topbar">
-        <a href="index.html">Home</a>
-        <a href="aoc2k23.html">AOC 2k23</a>
-    </div>
+    <div class="topbar"><a href="index.html">Home </a>|<a href="aoc2k23.html"> AOC 2k23</a></div>
     <br/>
+    <body>
+
     <div class="main">
-        Nothing here yet!
-        <br/>
-        <br/>
-        <div class="dropdown">
-            <label for="days">Choose a challenge:</label> 
-            <select name="days" id="dayMenu"> 
-                <option value="day1">Day 1</option> 
-                <option value="day2">Day 2</option> 
-                <option value="day3">Day 3</option> 
-                <option value="day4">Day 4</option> 
-                <option value="day5">Day 5</option> 
-                <option value="day6">Day 6</option> 
-                <option value="day7">Day 7</option> 
-                <option value="day8">Day 8</option>
-                <option value="day9">Day 9</option> 
-                <option value="day10">Day 10</option> 
-                <option value="day11">Day 11</option> 
-                <option value="day12">Day 12</option>
-                <option value="day13">Day 13</option> 
-                <option value="day14">Day 14</option> 
-                <option value="day15">Day 15</option> 
-                <option value="day16">Day 16</option>
-                <option value="day17">Day 17</option> 
-                <option value="day18">Day 18</option> 
-                <option value="day19">Day 19</option> 
-                <option value="day20">Day 20</option>
-                <option value="day21">Day 21</option> 
-                <option value="day22">Day 22</option> 
-                <option value="day23">Day 23</option> 
-                <option value="day24">Day 24</option>
-                <option value="day25">Day 25</option>
+        These are my solutions to the challenges for 2023's <a href="https://adventofcode.com">Advent of Code</a>
+        <br /><br />
+        <nav class="dropdown">
+            <label for="days">Select challenge day...</label>
+            <select name="days" id="days">
+                <option value="0"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
             </select>
+        </nav>
+        <div class="grid-container">
+            <div class="grid1">
+                <label for="txtPicker" class="filePLabel">Select File</label>
+                <input type="file" id="txtPicker" accept=".txt" onclick="setTextFile()" />
+            </div>
+            <div class="grid2"><button onclick="myFunc1()">Go!</button></div>
+        </div>
+        </div>
+        <br />
+    <div class="solution">
+        <div class="solutionGrid">
+            <div class="question" id="questionText">
+                Thoughts about the question here
+            </div>
+            <div class="answer" id="answerText">
+                Answer goes here
+            </div>
         </div>
     </div>
-
-
 </body>
-
 </html>
