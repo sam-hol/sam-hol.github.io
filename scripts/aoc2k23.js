@@ -1,18 +1,27 @@
-var textContents;
+var myFile = "";
 
-function setTextFile() {
-    var fileSelector = document.getElementById('txtPicker');
-    fileSelector.addEventListener('change', (Event) => {
-        var file = Event.target.file;
-        var reader = new FileReader();
-        reader.readAsText(file, 'UTF-8');
-        reader.onload = readerEvent => {
-            var content = readerEvent.target.result;
-            alert(content);
+function openFile() {
+    myFile = "";
+    let input = document.createElement('input');
+    input.type = 'file';
+    input.onchange = e => {
+        // you can use this method to get file and perform respective operations
+        //let files = Array.from(input.files).readAsText;
+        let files = e.target.files;
+        if (files.length > 0) document.getElementById('questionText').innerHTML = "";
+        for (var i = 0; i < files.length; i++) {
+            let read = new FileReader();
+            read.readAsBinaryString(files[i]);
+            read.onloadend = function () {
+                myFile += read.result;
+                document.getElementById('questionText').innerHTML += myFile;
+            }
         }
-    })
 
+    };
+    input.click();
 }
+
 
 function myFunc1() {
     var day = document.getElementById('days').value;
@@ -72,10 +81,3 @@ function myFunc1() {
     }
 }
 
-function readTxt() {
-    if (textFile == null) alert('NO FILE CHOSEN.');
-    else {
-        document.getElementById('questionText').innerHTML = textFile;
-    }
-
-}
