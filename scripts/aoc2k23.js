@@ -87,7 +87,9 @@ function myFunc1() {
 }
 
 function day1() {
-    document.getElementById('questionText').innerHTML = "";
+    document.getElementById('questionText').innerHTML = "Part 1 of day 1 asks us to " +
+        "isolate digits from input strings, combine the first and last occurance of a digit " +
+        "into double digit number, and then sum the results.";
     //document.getElementById('questionText').innerHTML = textFile.length;
     var solution1 = 0;
 
